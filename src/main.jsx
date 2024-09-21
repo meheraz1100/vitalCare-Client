@@ -16,12 +16,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    loader: () => fetch('http://localhost:5000/services'),
+    loader: () => fetch('https://vitalcare-server.vercel.app/services'),
   },
   {
     path: "/allServices",
     element: <AllServices />,
-    loader: () => fetch('http://localhost:5000/services')
+    loader: () => fetch('https://vitalcare-server.vercel.app/services')
   },
   {
     path: '/addNewService',
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
   {
     path: '/updateService/:id',
     element: <UpdateService></UpdateService>,
-    loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
+    loader: ({params}) => fetch(`https://vitalcare-server.vercel.app/services/${params.id}`)
   },
 ]);
 

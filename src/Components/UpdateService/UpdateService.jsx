@@ -23,7 +23,7 @@ const UpdateService = () => {
     console.log(updatedService);
 
     // send data to the server
-    fetch(`http://localhost:5000/services/${_id}`, {
+    fetch(`https://vitalcare-server.vercel.app/services/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

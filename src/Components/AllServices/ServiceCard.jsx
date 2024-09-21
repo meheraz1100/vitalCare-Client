@@ -17,7 +17,7 @@ const ServiceCard = ({ services, setServices }) => {
         }).then((result) => {
           if (result.isConfirmed) {
             fetch(
-              `http://localhost:5000/services/${_id}`,
+              `https://vitalcare-server.vercel.app/services/${_id}`,
               {
                 method: "DELETE",
               }
